@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/src/style/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered counter</title>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="controls">
+        <div class="control">
+          <label for="start_at">Start at</label>
+          <input type="text" name="start_at" value="0" id="start_at" aria-label="Start at input">
+        </div>
+        <div class="control">
+          <label for="step">Step</label>
+          <input type="text" name="step" value="1" id="step" aria-label="Step input">
+        </div>
+      </div>
+      <button class="count_button" type="button" aria-label="Increment counter">
+        <span class="current_count">0</span>
+      </button>
+    </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
